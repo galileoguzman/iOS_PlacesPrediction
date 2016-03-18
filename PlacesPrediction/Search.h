@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Search.h
 //  PlacesPrediction
 //
 //  Created by Galileo Guzman on 18/03/16.
@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @import GoogleMaps;
+@interface Search : UIViewController <GMSAutocompleteViewControllerDelegate, UISearchControllerDelegate>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@property (strong, nonatomic) IBOutlet UITextField *txtSearch;
 @end
-

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <GMSAutocompleteViewControllerDelegate>
 
 
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
+@property (strong, nonatomic) IBOutlet UILabel *lblAddress;
+
+- (IBAction)btnGetCurrentPlacePressed:(id)sender;
 @end
 
